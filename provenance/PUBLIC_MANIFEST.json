@@ -1,15 +1,5 @@
 {
   "artifact": "ChronoRAG-G public research artifact",
-  "citation_version": "0.4.0-rc1",
-  "counts": {
-    "architecture_rendered_files": 15,
-    "examples": 4,
-    "files": 165,
-    "result_figure_triplet_files": 24,
-    "schemas": 4,
-    "source_modules": 10,
-    "table_triplet_files": 51
-  },
   "deterministic_scope": "All files under the repository root except .git, cache/build directories, provenance/PUBLIC_MANIFEST.json, and provenance/SHA256SUMS.txt.",
   "files": [
     {
@@ -429,23 +419,23 @@
     },
     {
       "path": "provenance/LEAK_SCAN_RECEIPT.json",
-      "sha256": "aae8cfce8b98d559912e378ed6a40e40eb973de6db21dae7301d2c0d6ba5e75e",
-      "size_bytes": 246
+      "sha256": "862efb7624f22069c4cc536193798b90ae4b5747e16b0978f400da438527ca7f",
+      "size_bytes": 139
     },
     {
       "path": "provenance/RELEASE_METADATA.json",
-      "sha256": "91336a4e5dca3d3689c7866bf0012b4ccfd5533eebbdeef5bbc8f65d927664e0",
-      "size_bytes": 434
+      "sha256": "4372034919fc93258122686e306cf44439b79759f5120251abb362f4a572fe60",
+      "size_bytes": 304
     },
     {
       "path": "provenance/TEST_RECEIPT.json",
-      "sha256": "8514c0cc5933ee54653258592c0cd5e36d7660eebaeb59004583a43ff66d250f",
-      "size_bytes": 287
+      "sha256": "d5ed23bb7693f39bbf2ae7da5ed108ac9eabe66d851df9ee836eb76d42ef130d",
+      "size_bytes": 170
     },
     {
       "path": "pyproject.toml",
-      "sha256": "3af5af37d1335783b950d3b47aa4bcefb40882303cc54930218c65b6d1b36a17",
-      "size_bytes": 881
+      "sha256": "e7d0c6bd9f7dbbc77440ba061ca5e637207a3e86dccbd60ca0d72107cb8186c1",
+      "size_bytes": 816
     },
     {
       "path": "schemas/answer-contract.schema.json",
@@ -798,6 +788,11 @@
       "size_bytes": 887
     },
     {
+      "path": "tests/test_package_metadata.py",
+      "sha256": "2d2b1ab95e2b38101412e09dacab6f31986e8c0e078138624fbb1703c47fe037",
+      "size_bytes": 537
+    },
+    {
       "path": "tests/test_registry_assembler.py",
       "sha256": "83dcaf153c2e9c2d2742fa05f9d28097c1fed5fab8af947bccb6678ec8937bc8",
       "size_bytes": 2084
@@ -838,6 +833,5 @@
       "size_bytes": 11229
     }
   ],
-  "namespace": "chronorag_public",
   "version": "0.4.0rc1"
 }

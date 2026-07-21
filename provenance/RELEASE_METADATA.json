@@ -2,7 +2,6 @@
   "artifact": "ChronoRAG-G public research artifact",
   "author": "Shreyas Gowda S",
   "citation_version": "0.4.0-rc1",
-  "content_scope": "public schemas, synthetic examples, validators, aggregate tables, result figures, and architecture diagrams",
   "license": "Apache-2.0",
   "namespace": "chronorag_public",
   "package": "chronorag-g-public",
