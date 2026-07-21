@@ -174,6 +174,8 @@ def scan_repository(root: Path) -> ScanReport:
     for path in sorted(root.rglob("*")):
         rel = path.relative_to(root).as_posix()
         parts = path.relative_to(root).parts
+        if ".git" in parts:
+            continue
         if path.is_dir():
             if any(part in forbidden_dirs or part.endswith(".egg-info") for part in parts):
                 violations.append(f"forbidden_directory:{rel}")

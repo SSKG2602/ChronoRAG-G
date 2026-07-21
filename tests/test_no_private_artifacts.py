@@ -43,6 +43,13 @@ def test_scanner_rejects_cache_directory(tmp_path):
     assert SCANNER.scan_repository(tmp_path).status == "FAIL"
 
 
+def test_scanner_ignores_git_metadata(tmp_path):
+    metadata = tmp_path / ".git"
+    metadata.mkdir()
+    (metadata / "config").write_text("url = git" + "@" + "example.invalid:owner/repo.git")
+    assert SCANNER.scan_repository(tmp_path).status == "PASS"
+
+
 def test_scanner_rejects_email_address(tmp_path):
     address = "person" + "@" + "example.com"
     (tmp_path / "contact.txt").write_text(address)

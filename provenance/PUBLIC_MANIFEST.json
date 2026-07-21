@@ -439,7 +439,7 @@
     },
     {
       "path": "provenance/TEST_RECEIPT.json",
-      "sha256": "23a90d92c882533bd8431bf2b1f4ad6401ed611e0a228b4eb2315a7f12da12d4",
+      "sha256": "8514c0cc5933ee54653258592c0cd5e36d7660eebaeb59004583a43ff66d250f",
       "size_bytes": 287
     },
     {
@@ -789,8 +789,8 @@
     },
     {
       "path": "tests/test_no_private_artifacts.py",
-      "sha256": "bbec48ec8ee67d967bab6b3680246e82209adbd4eff48cce796de76884daffcd",
-      "size_bytes": 2577
+      "sha256": "286500f289c44177a8f362438c6c54b99bfbdf03a1d678a8ad555aa6fc6d0424",
+      "size_bytes": 2835
     },
     {
       "path": "tests/test_normalization.py",
@@ -834,8 +834,8 @@
     },
     {
       "path": "tools/verify_public_release.py",
-      "sha256": "61abf9d1c7233535dd61b8fce228be1043ff73db0c6d727e31b1f4b364bf174d",
-      "size_bytes": 11180
+      "sha256": "d256de7a3b301afa92ac89613338b6c79fb8483110fd9fe3086812d42b1a2cbd",
+      "size_bytes": 11229
     }
   ],
   "namespace": "chronorag_public",
