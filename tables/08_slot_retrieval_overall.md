@@ -1,0 +1,7 @@
+### ChronoRAG-G slot coverage and hybrid evidence-resolution
+
+| metric | numerator | denominator | percent | denominator note |
+| --- | --- | --- | --- | --- |
+| strict trace-derived slot coverage | 846 | 882 | 95.92% | slot-bearing questions only |
+| micro required-slot coverage | 3837 | 3889 | 98.66% | required slots |
+| hybrid evidence-resolution | 978 | 1005 | 97.31% | all questions; not retrieval accuracy |

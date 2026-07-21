@@ -1,0 +1,8 @@
+claim,status,public safe,required caveat
+811/1005 = 80.70% audited accuracy,APPROVED,yes,updated 480-transcript corpus
+517/656 = 78.81% base-query accuracy,APPROVED,yes,updated corpus only
+294/349 = 84.24% new-query accuracy,APPROVED,yes,updated corpus
+101/101 = 100.00% new-query unanswerable accuracy,APPROVED,yes,subgroup result
+20.95 pp above TG-RAG derived Correct aggregate,APPROVED_WITH_CAVEAT,yes,contextual; protocols differ
+97.31% retrieval accuracy,FORBIDDEN,no,use hybrid evidence-resolution instead
+single-time enumeration hotspot cause is proven,UNPROVEN,no,descriptive hotspot only; sampled analysis did not establish a universal cause

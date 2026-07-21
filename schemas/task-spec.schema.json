@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.invalid/chronorag-g-public/task-spec.schema.json",
+  "title": "Generic task specification",
+  "description": "An illustrative public task contract with ordered evidence requirements.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["question", "requirements"],
+  "properties": {
+    "question": {"type": "string", "minLength": 1, "maxLength": 4096},
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {"$ref": "#/$defs/requirement"}
+    }
+  },
+  "$defs": {
+    "scalar": {"type": ["string", "number", "integer", "boolean", "null"]},
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "property", "temporal_scope", "expected_value_type", "optional_qualifiers"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^E[1-9][0-9]*$"},
+        "subject": {"type": "string", "minLength": 1, "maxLength": 512},
+        "property": {"type": "string", "minLength": 1, "maxLength": 512},
+        "temporal_scope": {"type": "string", "minLength": 1, "maxLength": 256},
+        "expected_value_type": {"type": "string", "minLength": 1, "maxLength": 128},
+        "optional_qualifiers": {
+          "type": "object",
+          "maxProperties": 32,
+          "propertyNames": {"minLength": 1, "maxLength": 128},
+          "additionalProperties": {"$ref": "#/$defs/scalar"}
+        }
+      }
+    }
+  }
+}

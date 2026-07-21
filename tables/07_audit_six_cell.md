@@ -1,0 +1,12 @@
+### Audited answer accuracy by reasoning type and audit cohort
+
+| reasoning type | audit cohort | accepted | rejected | denominator | accuracy |
+| --- | --- | --- | --- | --- | --- |
+| enumeration | audited-right | 254 | 116 | 370 | 68.65% |
+| enumeration | ambiguous | 64 | 28 | 92 | 69.57% |
+| comparison | audited-right | 189 | 34 | 223 | 84.75% |
+| comparison | ambiguous | 51 | 8 | 59 | 86.44% |
+| unanswerable | audited-right | 249 | 8 | 257 | 96.89% |
+| unanswerable | ambiguous | 4 | 0 | 4 | 100.00% |
+| overall | audited-right | 692 | 158 | 850 | 81.41% |
+| overall | ambiguous | 119 | 36 | 155 | 76.77% |

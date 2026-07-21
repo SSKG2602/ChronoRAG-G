@@ -1,0 +1,313 @@
+{
+  "alt_text": "Three parallel paths labeled E1, E2, and E3 each move from slot-specific query to candidate pool, compatibility checks, temporal checks, and a usable candidate set. A side panel explains compatible and incompatible candidate states and the statement-period versus target-period distinction.",
+  "arrows": [
+    [
+      "e1_1",
+      "e1_2"
+    ],
+    [
+      "e1_2",
+      "e1_3"
+    ],
+    [
+      "e1_3",
+      "e1_4"
+    ],
+    [
+      "e1_4",
+      "e1_5"
+    ],
+    [
+      "e2_1",
+      "e2_2"
+    ],
+    [
+      "e2_2",
+      "e2_3"
+    ],
+    [
+      "e2_3",
+      "e2_4"
+    ],
+    [
+      "e2_4",
+      "e2_5"
+    ],
+    [
+      "e3_1",
+      "e3_2"
+    ],
+    [
+      "e3_2",
+      "e3_3"
+    ],
+    [
+      "e3_3",
+      "e3_4"
+    ],
+    [
+      "e3_4",
+      "e3_5"
+    ]
+  ],
+  "canvas": {
+    "height": 1200,
+    "width": 2000
+  },
+  "caption": "Each logical slot owns its own retrieval path: a slot-specific query produces a candidate pool, then compatibility and temporal checks filter usable evidence. Candidate identity is deduplicated within a slot, but a physical record may still support multiple logical slots. Exact production ranking and weighting logic are not released.",
+  "groups": [
+    {
+      "h": 620,
+      "label": "E1 path",
+      "w": 430,
+      "x": 70,
+      "y": 145
+    },
+    {
+      "h": 620,
+      "label": "E2 path",
+      "w": 430,
+      "x": 530,
+      "y": 145
+    },
+    {
+      "h": 620,
+      "label": "E3 path",
+      "w": 430,
+      "x": 990,
+      "y": 145
+    },
+    {
+      "h": 620,
+      "label": "Temporal states and example",
+      "w": 460,
+      "x": 1470,
+      "y": 145
+    }
+  ],
+  "nodes": [
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e1_1",
+      "label": "E1: slot-specific query",
+      "w": 330,
+      "x": 125,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e1_2",
+      "label": "candidate pool",
+      "w": 330,
+      "x": 125,
+      "y": 330
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e1_3",
+      "label": "entity/metric compatibility",
+      "w": 330,
+      "x": 125,
+      "y": 435
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 82,
+      "id": "e1_4",
+      "label": "source-period vs target-period check",
+      "w": 330,
+      "x": 125,
+      "y": 540
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 70,
+      "id": "e1_5",
+      "label": "usable candidate set",
+      "w": 330,
+      "x": 125,
+      "y": 655
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e2_1",
+      "label": "E2: slot-specific query",
+      "w": 330,
+      "x": 585,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e2_2",
+      "label": "candidate pool",
+      "w": 330,
+      "x": 585,
+      "y": 330
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e2_3",
+      "label": "entity/metric compatibility",
+      "w": 330,
+      "x": 585,
+      "y": 435
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 82,
+      "id": "e2_4",
+      "label": "source-period vs target-period check",
+      "w": 330,
+      "x": 585,
+      "y": 540
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 70,
+      "id": "e2_5",
+      "label": "usable candidate set",
+      "w": 330,
+      "x": 585,
+      "y": 655
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e3_1",
+      "label": "E3: slot-specific query",
+      "w": 330,
+      "x": 1045,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e3_2",
+      "label": "candidate pool",
+      "w": 330,
+      "x": 1045,
+      "y": 330
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 70,
+      "id": "e3_3",
+      "label": "entity/metric compatibility",
+      "w": 330,
+      "x": 1045,
+      "y": 435
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 82,
+      "id": "e3_4",
+      "label": "source-period vs target-period check",
+      "w": 330,
+      "x": 1045,
+      "y": 540
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 70,
+      "id": "e3_5",
+      "label": "usable candidate set",
+      "w": 330,
+      "x": 1045,
+      "y": 655
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 64,
+      "id": "semantic",
+      "label": "semantic match",
+      "w": 360,
+      "x": 1520,
+      "y": 225
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 64,
+      "id": "compatible",
+      "label": "temporally compatible",
+      "w": 360,
+      "x": 1520,
+      "y": 305
+    },
+    {
+      "fill": "#FFFFFF",
+      "h": 64,
+      "id": "incompatible",
+      "label": "temporally incompatible",
+      "w": 360,
+      "x": 1520,
+      "y": 385
+    },
+    {
+      "fill": "#FFFFFF",
+      "h": 64,
+      "id": "metadata",
+      "label": "metadata incomplete",
+      "w": 360,
+      "x": 1520,
+      "y": 465
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 150,
+      "id": "temporal",
+      "label": "statement period: FY2024 Q4\ntarget/value period: FY2025 Q1\nquestion-requested period: FY2025 Q1",
+      "w": 370,
+      "x": 1515,
+      "y": 565
+    }
+  ],
+  "note_box": {
+    "h": 230,
+    "w": 1820,
+    "x": 90,
+    "y": 845
+  },
+  "notes": [
+    "Candidate identity is deduplicated within a slot.",
+    "A physical record may remain relevant to multiple logical slots.",
+    "Exact production ranking and weighting logic are not released."
+  ],
+  "required_labels": [
+    "Per-Slot Retrieval, Temporal Compatibility, and Evidence Control",
+    "E1 path",
+    "E2 path",
+    "E3 path",
+    "Temporal states and example",
+    "E1: slot-specific query",
+    "candidate pool",
+    "entity/metric compatibility",
+    "source-period vs target-period check",
+    "usable candidate set",
+    "E2: slot-specific query",
+    "candidate pool",
+    "entity/metric compatibility",
+    "source-period vs target-period check",
+    "usable candidate set",
+    "E3: slot-specific query",
+    "candidate pool",
+    "entity/metric compatibility",
+    "source-period vs target-period check",
+    "usable candidate set",
+    "semantic match",
+    "temporally compatible",
+    "temporally incompatible",
+    "metadata incomplete",
+    "statement period: FY2024 Q4 target/value period: FY2025 Q1 question-requested period: FY2025 Q1",
+    "Candidate identity is deduplicated within a slot.",
+    "A physical record may remain relevant to multiple logical slots.",
+    "Exact production ranking and weighting logic are not released."
+  ],
+  "stem": "03_per_slot_retrieval_and_temporal_control",
+  "title": "Per-Slot Retrieval, Temporal Compatibility, and Evidence Control"
+}

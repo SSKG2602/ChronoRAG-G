@@ -1,0 +1,4 @@
+reasoning type,strict-trace-complete answer failures,trace-incomplete answer failures,slotless answer failures,total failures,note
+enumeration,118,21,5,144,observed conditional failure decomposition
+comparison,42,0,0,42,observed conditional failure decomposition
+unanswerable,7,1,0,8,observed conditional failure decomposition

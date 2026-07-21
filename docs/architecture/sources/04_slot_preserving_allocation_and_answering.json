@@ -1,0 +1,407 @@
+{
+  "alt_text": "Four logical obligations map to three physical records, with record 2 supporting both E2 and E3. A registry feeds structured answer components, grounding, bounded correction, and a final answer.",
+  "arrows": [
+    {
+      "from": "e1",
+      "route": [
+        [
+          290,
+          260
+        ],
+        [
+          480,
+          260
+        ]
+      ],
+      "to": "map"
+    },
+    {
+      "from": "e2",
+      "route": [
+        [
+          290,
+          360
+        ],
+        [
+          480,
+          360
+        ]
+      ],
+      "to": "map"
+    },
+    {
+      "from": "e3",
+      "route": [
+        [
+          290,
+          460
+        ],
+        [
+          480,
+          460
+        ]
+      ],
+      "to": "map"
+    },
+    {
+      "from": "e4",
+      "route": [
+        [
+          290,
+          560
+        ],
+        [
+          480,
+          560
+        ]
+      ],
+      "to": "map"
+    },
+    {
+      "from": "map",
+      "route": [
+        [
+          730,
+          260
+        ],
+        [
+          925,
+          260
+        ]
+      ],
+      "to": "rec1"
+    },
+    {
+      "from": "map",
+      "route": [
+        [
+          730,
+          405
+        ],
+        [
+          885,
+          405
+        ]
+      ],
+      "to": "rec2"
+    },
+    {
+      "from": "map",
+      "route": [
+        [
+          730,
+          560
+        ],
+        [
+          925,
+          560
+        ]
+      ],
+      "to": "rec3"
+    },
+    {
+      "from": "rec1",
+      "route": [
+        [
+          1055,
+          260
+        ],
+        [
+          1230,
+          260
+        ]
+      ],
+      "to": "registry"
+    },
+    {
+      "from": "rec2",
+      "route": [
+        [
+          1135,
+          405
+        ],
+        [
+          1230,
+          405
+        ]
+      ],
+      "to": "registry"
+    },
+    {
+      "from": "rec3",
+      "route": [
+        [
+          1055,
+          560
+        ],
+        [
+          1230,
+          560
+        ]
+      ],
+      "to": "registry"
+    },
+    {
+      "from": "registry",
+      "route": [
+        [
+          1490,
+          415
+        ],
+        [
+          1535,
+          415
+        ],
+        [
+          1535,
+          276
+        ],
+        [
+          1595,
+          276
+        ]
+      ],
+      "to": "a"
+    },
+    {
+      "from": "a",
+      "route": [
+        [
+          1745,
+          322
+        ],
+        [
+          1745,
+          360
+        ]
+      ],
+      "to": "g"
+    },
+    {
+      "from": "g",
+      "route": [
+        [
+          1745,
+          424
+        ],
+        [
+          1745,
+          470
+        ]
+      ],
+      "to": "bc"
+    },
+    {
+      "from": "bc",
+      "route": [
+        [
+          1745,
+          534
+        ],
+        [
+          1745,
+          580
+        ]
+      ],
+      "to": "final"
+    }
+  ],
+  "canvas": {
+    "height": 1200,
+    "width": 2000
+  },
+  "caption": "Slot-preserving allocation records selected support relations between logical obligations and physical records while keeping the logical obligations distinct. In the synthetic mapping, record 2 supports two logical obligations and consumes physical context once, but E2 and E3 remain separate answer requirements. Grounding and bounded correction operate on individual components rather than an uncontrolled full-answer rewrite.",
+  "groups": [
+    {
+      "h": 540,
+      "label": "Logical obligations E1\u2013E4",
+      "w": 320,
+      "x": 70,
+      "y": 145
+    },
+    {
+      "h": 540,
+      "label": "Selected support relations",
+      "w": 350,
+      "x": 430,
+      "y": 145
+    },
+    {
+      "h": 540,
+      "label": "Physical records 1-3",
+      "w": 340,
+      "x": 820,
+      "y": 145
+    },
+    {
+      "h": 540,
+      "label": "Evidence registry",
+      "w": 320,
+      "x": 1200,
+      "y": 145
+    },
+    {
+      "h": 540,
+      "label": "Answer construction",
+      "w": 370,
+      "x": 1560,
+      "y": 145
+    }
+  ],
+  "nodes": [
+    {
+      "fill": "#EAF2F8",
+      "h": 60,
+      "id": "e1",
+      "label": "E1",
+      "w": 110,
+      "x": 180,
+      "y": 230
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 60,
+      "id": "e2",
+      "label": "E2",
+      "w": 110,
+      "x": 180,
+      "y": 330
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 60,
+      "id": "e3",
+      "label": "E3",
+      "w": 110,
+      "x": 180,
+      "y": 430
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 60,
+      "id": "e4",
+      "label": "E4",
+      "w": 110,
+      "x": 180,
+      "y": 530
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 390,
+      "id": "map",
+      "label": "Synthetic mapping\nE1 -> record 1\nE2 -> record 2\nE3 -> record 2\nE4 -> record 3",
+      "w": 250,
+      "x": 480,
+      "y": 230
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 60,
+      "id": "rec1",
+      "label": "record 1",
+      "w": 130,
+      "x": 925,
+      "y": 230
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 110,
+      "id": "rec2",
+      "label": "record 2\nsupports two logical obligations",
+      "w": 250,
+      "x": 885,
+      "y": 350
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 60,
+      "id": "rec3",
+      "label": "record 3",
+      "w": 130,
+      "x": 925,
+      "y": 530
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 330,
+      "id": "registry",
+      "label": "logical-to-physical\nregistry",
+      "w": 260,
+      "x": 1230,
+      "y": 250
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 92,
+      "id": "a",
+      "label": "structured answer\ncomponents A1\u2013A4",
+      "w": 300,
+      "x": 1595,
+      "y": 230
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 64,
+      "id": "g",
+      "label": "grounding",
+      "w": 220,
+      "x": 1635,
+      "y": 360
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 64,
+      "id": "bc",
+      "label": "bounded correction",
+      "w": 250,
+      "x": 1620,
+      "y": 470
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 64,
+      "id": "final",
+      "label": "final answer",
+      "w": 220,
+      "x": 1635,
+      "y": 580
+    }
+  ],
+  "note_box": {
+    "h": 250,
+    "w": 1820,
+    "x": 90,
+    "y": 810
+  },
+  "notes": [
+    "record 2 supports two logical obligations and consumes physical context once. E2 and E3 remain distinct logical answer requirements.",
+    "one output component per required obligation; comparison requires complete compatible operands",
+    "unsupported components are rejected or reopened; bounded correction reopens only disputed components"
+  ],
+  "required_labels": [
+    "Slot-Preserving Allocation, Evidence Registry, and Answer Construction",
+    "Logical obligations E1-E4",
+    "Selected support relations",
+    "Physical records 1-3",
+    "Evidence registry",
+    "Answer construction",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "Synthetic mapping E1 -> record 1 E2 -> record 2 E3 -> record 2 E4 -> record 3",
+    "record 1",
+    "record 2 supports two logical obligations",
+    "record 3",
+    "logical-to-physical registry",
+    "structured answer components A1-A4",
+    "grounding",
+    "bounded correction",
+    "final answer",
+    "record 2 supports two logical obligations and consumes physical context once. E2 and E3 remain distinct logical answer requirements.",
+    "one output component per required obligation; comparison requires complete compatible operands",
+    "unsupported components are rejected or reopened; bounded correction reopens only disputed components"
+  ],
+  "stem": "04_slot_preserving_allocation_and_answering",
+  "title": "Slot-Preserving Allocation, Evidence Registry, and Answer Construction"
+}

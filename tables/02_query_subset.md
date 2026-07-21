@@ -1,0 +1,6 @@
+### Audited answer accuracy by query subset
+
+| query subset | accepted | rejected | denominator | accuracy | source |
+| --- | --- | --- | --- | --- | --- |
+| Base queries / updated corpus | 517 | 139 | 656 | 78.81% | audited query-subset proof freeze |
+| New queries / updated corpus | 294 | 55 | 349 | 84.24% | audited query-subset proof freeze |

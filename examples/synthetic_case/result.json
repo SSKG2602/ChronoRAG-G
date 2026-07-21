@@ -1,0 +1,67 @@
+{
+  "A": {
+    "columns": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "rows": [
+      "E1",
+      "E2"
+    ],
+    "values": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "Y": {
+    "columns": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "values": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "answer": "Revenue is larger: 10 USD versus 7 USD.",
+  "answer_components": {
+    "E1": "10 USD",
+    "E2": "7 USD"
+  },
+  "answer_evidence_refs": {
+    "E1": [
+      "p1"
+    ],
+    "E2": [
+      "p1"
+    ]
+  },
+  "budget_used": 5,
+  "grounding": {
+    "E1": "strict_supported",
+    "E2": "strict_supported"
+  },
+  "micro_coverage": "2/2",
+  "strict_coverage": "2/2"
+}

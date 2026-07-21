@@ -1,0 +1,19 @@
+{
+  "components": [
+    {
+      "requirement_id": "E1",
+      "status": "supported",
+      "value": "17 percent",
+      "evidence_ids": ["EV-SHARED"],
+      "note": "Value is stated in the invented shared record."
+    },
+    {
+      "requirement_id": "E2",
+      "status": "supported",
+      "value": "88 percent",
+      "evidence_ids": ["EV-SHARED"],
+      "note": "Value is stated in the invented shared record."
+    }
+  ],
+  "overall_status": "supported"
+}

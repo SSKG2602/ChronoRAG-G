@@ -1,0 +1,299 @@
+{
+  "alt_text": "A left-to-right and top-to-bottom pipeline shows a question becoming ordered evidence obligations, then moving through per-slot retrieval, temporal control, allocation, registry, answer construction, grounding, finalization, and evaluation. Group labels separate planning, evidence resolution, answer construction, and evaluation.",
+  "arrows": [
+    {
+      "from": "q",
+      "route": [
+        [
+          310,
+          274
+        ],
+        [
+          365,
+          274
+        ]
+      ],
+      "to": "obl"
+    },
+    {
+      "from": "obl",
+      "route": [
+        [
+          615,
+          274
+        ],
+        [
+          680,
+          274
+        ]
+      ],
+      "to": "retr"
+    },
+    {
+      "from": "retr",
+      "route": [
+        [
+          890,
+          274
+        ],
+        [
+          945,
+          274
+        ]
+      ],
+      "to": "temp"
+    },
+    {
+      "from": "temp",
+      "route": [
+        [
+          1210,
+          274
+        ],
+        [
+          1265,
+          274
+        ]
+      ],
+      "to": "alloc"
+    },
+    {
+      "from": "alloc",
+      "route": [
+        [
+          1395,
+          323
+        ],
+        [
+          1395,
+          425
+        ],
+        [
+          270,
+          425
+        ],
+        [
+          270,
+          560
+        ]
+      ],
+      "to": "reg"
+    },
+    {
+      "from": "reg",
+      "route": [
+        [
+          420,
+          605
+        ],
+        [
+          480,
+          605
+        ]
+      ],
+      "to": "ans"
+    },
+    {
+      "from": "ans",
+      "route": [
+        [
+          770,
+          605
+        ],
+        [
+          830,
+          605
+        ]
+      ],
+      "to": "ground"
+    },
+    {
+      "from": "ground",
+      "route": [
+        [
+          1120,
+          605
+        ],
+        [
+          1180,
+          605
+        ]
+      ],
+      "to": "final"
+    },
+    {
+      "from": "final",
+      "route": [
+        [
+          1450,
+          605
+        ],
+        [
+          1510,
+          605
+        ]
+      ],
+      "to": "eval"
+    }
+  ],
+  "canvas": {
+    "height": 1200,
+    "width": 2000
+  },
+  "caption": "ChronoRAG-G represents each requested fact as an ordered evidence obligation and preserves that logical identity through retrieval, temporal control, allocation, answer construction, and evaluation. The diagram separates logical slots from physical evidence so that a record can support multiple obligations without collapsing the required answer components. The public abstraction intentionally omits private ranking equations, prompts, provider configuration, and production constants.",
+  "groups": [
+    {
+      "h": 250,
+      "label": "Planning",
+      "w": 560,
+      "x": 70,
+      "y": 145
+    },
+    {
+      "h": 250,
+      "label": "Evidence Resolution",
+      "w": 900,
+      "x": 670,
+      "y": 145
+    },
+    {
+      "h": 240,
+      "label": "Answer Construction",
+      "w": 1210,
+      "x": 70,
+      "y": 480
+    },
+    {
+      "h": 240,
+      "label": "Evaluation",
+      "w": 600,
+      "x": 1330,
+      "y": 480
+    }
+  ],
+  "nodes": [
+    {
+      "fill": "#EAF2F8",
+      "h": 78,
+      "id": "q",
+      "label": "Question",
+      "w": 190,
+      "x": 120,
+      "y": 235
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 98,
+      "id": "obl",
+      "label": "Ordered Evidence Obligations E1…En",
+      "w": 250,
+      "x": 365,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 98,
+      "id": "retr",
+      "label": "Per-Slot Retrieval",
+      "w": 210,
+      "x": 680,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 98,
+      "id": "temp",
+      "label": "Temporal & Compatibility Control",
+      "w": 265,
+      "x": 945,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 98,
+      "id": "alloc",
+      "label": "Slot-Preserving Allocation",
+      "w": 260,
+      "x": 1265,
+      "y": 225
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 90,
+      "id": "reg",
+      "label": "Logical-to-Physical Evidence Registry",
+      "w": 300,
+      "x": 120,
+      "y": 560
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 90,
+      "id": "ans",
+      "label": "Structured Answer Construction",
+      "w": 290,
+      "x": 480,
+      "y": 560
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 90,
+      "id": "ground",
+      "label": "Grounding & Bounded Correction",
+      "w": 290,
+      "x": 830,
+      "y": 560
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 90,
+      "id": "final",
+      "label": "Deterministic Finalization",
+      "w": 270,
+      "x": 1180,
+      "y": 560
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 90,
+      "id": "eval",
+      "label": "Answer + Trace Evaluation",
+      "w": 270,
+      "x": 1510,
+      "y": 560
+    }
+  ],
+  "note_box": {
+    "h": 230,
+    "w": 1820,
+    "x": 90,
+    "y": 835
+  },
+  "notes": [
+    "Logical slot identity is preserved from planning through evaluation.",
+    "Physical evidence may be shared without collapsing logical obligations.",
+    "Public abstraction: private ranking equations, prompts, provider configuration, and production constants are intentionally omitted."
+  ],
+  "required_labels": [
+    "ChronoRAG-G: Obligation-Preserving Temporal QA Architecture",
+    "Planning",
+    "Evidence Resolution",
+    "Answer Construction",
+    "Evaluation",
+    "Question",
+    "Ordered Evidence Obligations E1…En",
+    "Per-Slot Retrieval",
+    "Temporal & Compatibility Control",
+    "Slot-Preserving Allocation",
+    "Logical-to-Physical Evidence Registry",
+    "Structured Answer Construction",
+    "Grounding & Bounded Correction",
+    "Deterministic Finalization",
+    "Answer + Trace Evaluation",
+    "Logical slot identity is preserved from planning through evaluation.",
+    "Physical evidence may be shared without collapsing logical obligations.",
+    "Public abstraction: private ranking equations, prompts, provider configuration, and production constants are intentionally omitted."
+  ],
+  "stem": "01_global_architecture",
+  "title": "ChronoRAG-G: Obligation-Preserving Temporal QA Architecture"
+}

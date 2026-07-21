@@ -1,0 +1,13 @@
+### Audited answer accuracy by reasoning type and temporal scope
+
+| reasoning type | temporal scope | accepted | failures | denominator | accuracy |
+| --- | --- | --- | --- | --- | --- |
+| enumeration | single-time | 162 | 112 | 274 | 59.12% |
+| enumeration | multi-time | 106 | 17 | 123 | 86.18% |
+| enumeration | relative-time | 50 | 15 | 65 | 76.92% |
+| comparison | single-time | 70 | 10 | 80 | 87.50% |
+| comparison | multi-time | 114 | 20 | 134 | 85.07% |
+| comparison | relative-time | 56 | 12 | 68 | 82.35% |
+| unanswerable | single-time | 127 | 2 | 129 | 98.45% |
+| unanswerable | multi-time | 63 | 1 | 64 | 98.44% |
+| unanswerable | relative-time | 63 | 5 | 68 | 92.65% |

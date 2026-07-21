@@ -1,0 +1,13 @@
+{
+  "requirements": 2,
+  "corpus_records": 4,
+  "shared_support": ["E1", "E2"],
+  "strict_slot_metric": {
+    "numerator": 1,
+    "denominator": 1,
+    "fraction": "1",
+    "decimal": "1",
+    "percentage": "100",
+    "reason_code": null
+  }
+}

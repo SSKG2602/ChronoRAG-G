@@ -1,0 +1,11 @@
+{
+  "requirements": ["E1", "E2"],
+  "records": [
+    {
+      "evidence_id": "EV-SHARED",
+      "text": "During 2031-Q1, Acme Holdings recorded a service margin of 17 percent and Beta Systems recorded subscription retention of 88 percent.",
+      "supports_requirements": ["E1", "E2"],
+      "metadata": {"record_id": "REC-SHARED", "synthetic": true}
+    }
+  ]
+}

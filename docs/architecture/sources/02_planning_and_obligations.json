@@ -1,0 +1,416 @@
+{
+  "alt_text": "A synthetic question passes through extraction and validation stages to produce four obligations for Acme Holdings and Beta Systems revenue and operating margin in FY2025 Q1.",
+  "arrows": [
+    {
+      "from": "question",
+      "route": [
+        [
+          585,
+          278
+        ],
+        [
+          660,
+          278
+        ],
+        [
+          660,
+          259
+        ],
+        [
+          735,
+          259
+        ]
+      ],
+      "to": "entity"
+    },
+    {
+      "from": "entity",
+      "route": [
+        [
+          955,
+          259
+        ],
+        [
+          1000,
+          259
+        ]
+      ],
+      "to": "metric"
+    },
+    {
+      "from": "metric",
+      "route": [
+        [
+          1220,
+          259
+        ],
+        [
+          1265,
+          259
+        ]
+      ],
+      "to": "period"
+    },
+    {
+      "from": "period",
+      "route": [
+        [
+          1395,
+          298
+        ],
+        [
+          1395,
+          340
+        ],
+        [
+          885,
+          340
+        ],
+        [
+          885,
+          375
+        ]
+      ],
+      "to": "shape"
+    },
+    {
+      "from": "shape",
+      "route": [
+        [
+          1035,
+          416
+        ],
+        [
+          1085,
+          416
+        ]
+      ],
+      "to": "construct"
+    },
+    {
+      "from": "construct",
+      "route": [
+        [
+          1385,
+          416
+        ],
+        [
+          1435,
+          416
+        ]
+      ],
+      "to": "valid"
+    },
+    {
+      "from": "valid",
+      "route": [
+        [
+          1565,
+          457
+        ],
+        [
+          1565,
+          535
+        ],
+        [
+          1095,
+          535
+        ],
+        [
+          1095,
+          661
+        ],
+        [
+          1005,
+          661
+        ]
+      ],
+      "to": "e1"
+    },
+    {
+      "from": "valid",
+      "route": [
+        [
+          1565,
+          457
+        ],
+        [
+          1565,
+          535
+        ],
+        [
+          1095,
+          535
+        ],
+        [
+          1095,
+          751
+        ],
+        [
+          1005,
+          751
+        ]
+      ],
+      "to": "e2"
+    },
+    {
+      "from": "valid",
+      "route": [
+        [
+          1565,
+          457
+        ],
+        [
+          1565,
+          535
+        ],
+        [
+          1095,
+          535
+        ],
+        [
+          1095,
+          841
+        ],
+        [
+          1005,
+          841
+        ]
+      ],
+      "to": "e3"
+    },
+    {
+      "from": "valid",
+      "route": [
+        [
+          1565,
+          457
+        ],
+        [
+          1565,
+          535
+        ],
+        [
+          1095,
+          535
+        ],
+        [
+          1095,
+          931
+        ],
+        [
+          1005,
+          931
+        ]
+      ],
+      "to": "e4"
+    }
+  ],
+  "canvas": {
+    "height": 1200,
+    "width": 2000
+  },
+  "caption": "The planning stage converts one synthetic question into a stable ordered list of atomic evidence obligations. Each obligation records the entity, metric, and target period needed for one answer component, which lets downstream retrieval and evaluation preserve complete output coverage. The example uses synthetic entities only.",
+  "groups": [
+    {
+      "h": 300,
+      "label": "Synthetic planning input",
+      "w": 560,
+      "x": 70,
+      "y": 145
+    },
+    {
+      "h": 360,
+      "label": "Planning stages",
+      "w": 1240,
+      "x": 680,
+      "y": 145
+    },
+    {
+      "h": 455,
+      "label": "Ordered obligations",
+      "w": 1010,
+      "x": 70,
+      "y": 565
+    },
+    {
+      "h": 455,
+      "label": "Validation notes",
+      "w": 800,
+      "x": 1120,
+      "y": 565
+    }
+  ],
+  "nodes": [
+    {
+      "fill": "#F7E8C2",
+      "h": 135,
+      "id": "question",
+      "label": "Question\n“For Acme Holdings and Beta Systems, report revenue and operating margin for FY2025 Q1.”",
+      "w": 470,
+      "x": 115,
+      "y": 210
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 78,
+      "id": "entity",
+      "label": "Entity extraction",
+      "w": 220,
+      "x": 735,
+      "y": 220
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 78,
+      "id": "metric",
+      "label": "Metric extraction",
+      "w": 220,
+      "x": 1000,
+      "y": 220
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 78,
+      "id": "period",
+      "label": "Target-period resolution",
+      "w": 260,
+      "x": 1265,
+      "y": 220
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 82,
+      "id": "shape",
+      "label": "Operation and output-shape detection",
+      "w": 300,
+      "x": 735,
+      "y": 375
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 82,
+      "id": "construct",
+      "label": "Ordered obligation construction",
+      "w": 300,
+      "x": 1085,
+      "y": 375
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 82,
+      "id": "valid",
+      "label": "Task validation",
+      "w": 260,
+      "x": 1435,
+      "y": 375
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "e1",
+      "label": "E1: Acme Holdings × Revenue × FY2025 Q1",
+      "w": 875,
+      "x": 130,
+      "y": 625
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "e2",
+      "label": "E2: Acme Holdings × Operating Margin × FY2025 Q1",
+      "w": 875,
+      "x": 130,
+      "y": 715
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "e3",
+      "label": "E3: Beta Systems × Revenue × FY2025 Q1",
+      "w": 875,
+      "x": 130,
+      "y": 805
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "e4",
+      "label": "E4: Beta Systems × Operating Margin × FY2025 Q1",
+      "w": 875,
+      "x": 130,
+      "y": 895
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 88,
+      "id": "slot",
+      "label": "A slot is the runtime and evaluation representation of one atomic evidence obligation.",
+      "w": 720,
+      "x": 1160,
+      "y": 625
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "stable",
+      "label": "stable order",
+      "w": 330,
+      "x": 1160,
+      "y": 755
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "unique",
+      "label": "unique obligation identity",
+      "w": 340,
+      "x": 1540,
+      "y": 755
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "typed",
+      "label": "typed target period",
+      "w": 330,
+      "x": 1160,
+      "y": 850
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 72,
+      "id": "coverage",
+      "label": "complete output coverage",
+      "w": 340,
+      "x": 1540,
+      "y": 850
+    }
+  ],
+  "notes": [],
+  "required_labels": [
+    "From Question to Ordered Evidence Obligations",
+    "Synthetic planning input",
+    "Planning stages",
+    "Ordered obligations",
+    "Validation notes",
+    "Question “For Acme Holdings and Beta Systems, report revenue and operating margin for FY2025 Q1.”",
+    "Entity extraction",
+    "Metric extraction",
+    "Target-period resolution",
+    "Operation and output-shape detection",
+    "Ordered obligation construction",
+    "Task validation",
+    "E1: Acme Holdings × Revenue × FY2025 Q1",
+    "E2: Acme Holdings × Operating Margin × FY2025 Q1",
+    "E3: Beta Systems × Revenue × FY2025 Q1",
+    "E4: Beta Systems × Operating Margin × FY2025 Q1",
+    "A slot is the runtime and evaluation representation of one atomic evidence obligation.",
+    "stable order",
+    "unique obligation identity",
+    "typed target period",
+    "complete output coverage"
+  ],
+  "stem": "02_planning_and_obligations",
+  "title": "From Question to Ordered Evidence Obligations"
+}

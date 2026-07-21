@@ -1,0 +1,4 @@
+{"entity": "Acme Holdings", "metric": "Revenue", "record_id": "synthetic-acme-q1-revenue", "statement_period": "FY2025 Q1 call", "target_period": "FY2025 Q1", "value": "$125.0 million"}
+{"entity": "Acme Holdings", "metric": "Operating Margin", "record_id": "synthetic-acme-q1-margin", "statement_period": "FY2025 Q1 call", "target_period": "FY2025 Q1", "value": "18.4%"}
+{"entity": "Beta Systems", "metric": "Revenue", "record_id": "synthetic-beta-q1-revenue", "statement_period": "FY2025 Q1 call", "target_period": "FY2025 Q1", "value": "$98.2 million"}
+{"entity": "Beta Systems", "metric": "Operating Margin", "record_id": "synthetic-beta-q1-margin", "statement_period": "FY2025 Q1 call", "target_period": "FY2025 Q1", "value": "14.7%"}

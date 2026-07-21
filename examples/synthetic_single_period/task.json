@@ -1,0 +1,13 @@
+{
+  "obligations": [
+    {
+      "entity": "Acme Holdings",
+      "label": "Acme Holdings revenue FY2025 Q1",
+      "metric": "Revenue",
+      "obligation_id": "E1",
+      "requested_period": "FY2025 Q1",
+      "required": true
+    }
+  ],
+  "question": "What was Acme Holdings revenue in FY2025 Q1?"
+}

@@ -1,0 +1,7 @@
+### Slot coverage by temporal scope
+
+| temporal scope | strict numerator | strict denominator | strict coverage | micro numerator | micro denominator | micro coverage |
+| --- | --- | --- | --- | --- | --- | --- |
+| single-time | 392 | 417 | 94.00% | 1722 | 1754 | 98.18% |
+| multi-time | 287 | 290 | 98.97% | 1326 | 1336 | 99.25% |
+| relative-time | 167 | 175 | 95.43% | 789 | 799 | 98.75% |

@@ -1,0 +1,37 @@
+{
+  "obligations": [
+    {
+      "entity": "Acme Holdings",
+      "label": "Acme revenue",
+      "metric": "Revenue",
+      "obligation_id": "E1",
+      "requested_period": "FY2025 Q1",
+      "required": true
+    },
+    {
+      "entity": "Acme Holdings",
+      "label": "Acme operating margin",
+      "metric": "Operating Margin",
+      "obligation_id": "E2",
+      "requested_period": "FY2025 Q1",
+      "required": true
+    },
+    {
+      "entity": "Beta Systems",
+      "label": "Beta revenue",
+      "metric": "Revenue",
+      "obligation_id": "E3",
+      "requested_period": "FY2025 Q1",
+      "required": true
+    },
+    {
+      "entity": "Beta Systems",
+      "label": "Beta operating margin",
+      "metric": "Operating Margin",
+      "obligation_id": "E4",
+      "requested_period": "FY2025 Q1",
+      "required": true
+    }
+  ],
+  "question": "List FY2025 Q1 revenue and operating margin for Acme Holdings and Beta Systems."
+}

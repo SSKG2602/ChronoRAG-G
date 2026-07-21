@@ -1,0 +1,1 @@
+This repaired synthetic case contains explicit budget, candidate records, structured claims, sorted-order validator logic, allocation matrix A, physical vector Y, registry, grounding decisions, and strict and micro coverage calculations.

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chronorag-g-public"
+version = "0.4.0rc1"
+description = "Public-safe ChronoRAG-G schemas, synthetic examples, validators, aggregate tables, and figures."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+license-files = ["LICENSE"]
+authors = [{name = "Shreyas Gowda S"}]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: Apache Software License",
+]
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "jsonschema>=4.20", "pytest>=8"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

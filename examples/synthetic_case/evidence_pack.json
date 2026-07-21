@@ -1,0 +1,40 @@
+{
+  "budget_B": 8,
+  "per_record_costs": {
+    "p1": 5,
+    "p2": 4,
+    "p3": 4,
+    "p4": 4,
+    "p5": 4
+  },
+  "physical_registry": {
+    "p1": {
+      "cost": 5,
+      "included": true,
+      "supports": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  "query_vectors": {
+    "E1": [
+      1.0,
+      0.0
+    ],
+    "E2": [
+      0.0,
+      1.0
+    ]
+  },
+  "selected": {
+    "E1": "c1",
+    "E2": "c1"
+  },
+  "weights": {
+    "entity": 0.35,
+    "metadata": 0.1,
+    "property": 0.35,
+    "temporal": 0.2
+  }
+}

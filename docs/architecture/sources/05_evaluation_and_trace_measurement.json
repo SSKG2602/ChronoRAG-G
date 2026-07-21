@@ -1,0 +1,331 @@
+{
+  "alt_text": "A cohort of 1,005 evaluated questions splits into 882 slot-bearing and 123 slotless questions. The diagram lists audited answer accuracy, strict trace-derived slot coverage, micro required-slot coverage, hybrid evidence resolution, and rejected-answer contingency counts.",
+  "arrows": [
+    {
+      "from": "all",
+      "route": [
+        [
+          330,
+          300
+        ],
+        [
+          330,
+          345
+        ],
+        [
+          250,
+          345
+        ],
+        [
+          250,
+          390
+        ]
+      ],
+      "to": "slotbearing"
+    },
+    {
+      "from": "all",
+      "route": [
+        [
+          330,
+          300
+        ],
+        [
+          330,
+          345
+        ],
+        [
+          470,
+          345
+        ],
+        [
+          470,
+          390
+        ]
+      ],
+      "to": "slotless"
+    },
+    {
+      "from": "slotbearing",
+      "route": [
+        [
+          250,
+          454
+        ],
+        [
+          250,
+          500
+        ],
+        [
+          610,
+          500
+        ],
+        [
+          610,
+          384
+        ],
+        [
+          785,
+          384
+        ]
+      ],
+      "to": "req"
+    },
+    {
+      "from": "req",
+      "route": [
+        [
+          910,
+          418
+        ],
+        [
+          910,
+          465
+        ]
+      ],
+      "to": "res"
+    },
+    {
+      "from": "res",
+      "route": [
+        [
+          910,
+          533
+        ],
+        [
+          910,
+          590
+        ]
+      ],
+      "to": "strict"
+    },
+    {
+      "from": "res",
+      "route": [
+        [
+          1035,
+          499
+        ],
+        [
+          1130,
+          499
+        ],
+        [
+          1130,
+          790
+        ],
+        [
+          1095,
+          790
+        ]
+      ],
+      "to": "micro"
+    },
+    {
+      "from": "all",
+      "route": [
+        [
+          480,
+          265
+        ],
+        [
+          610,
+          265
+        ],
+        [
+          610,
+          281
+        ],
+        [
+          1390,
+          281
+        ]
+      ],
+      "to": "answer"
+    },
+    {
+      "from": "answer",
+      "route": [
+        [
+          1570,
+          322
+        ],
+        [
+          1570,
+          380
+        ]
+      ],
+      "to": "hybrid"
+    },
+    {
+      "from": "answer",
+      "route": [
+        [
+          1750,
+          281
+        ],
+        [
+          1815,
+          281
+        ],
+        [
+          1815,
+          605
+        ],
+        [
+          1770,
+          605
+        ]
+      ],
+      "to": "reject"
+    }
+  ],
+  "canvas": {
+    "height": 1200,
+    "width": 2000
+  },
+  "caption": "Evaluation separates final answer acceptance from evidence-resolution measures. The 1,005-question cohort contains 882 slot-bearing and 123 slotless questions; strict and micro slot metrics apply to the slot-bearing branch, while answer accuracy and hybrid evidence resolution are measured over all questions. Hybrid evidence resolution is not answer accuracy and is not a conventional top-k retrieval metric.",
+  "groups": [
+    {
+      "h": 390,
+      "label": "Cohort split",
+      "w": 500,
+      "x": 70,
+      "y": 145
+    },
+    {
+      "h": 730,
+      "label": "Slot-bearing branch",
+      "w": 520,
+      "x": 650,
+      "y": 145
+    },
+    {
+      "h": 730,
+      "label": "All-question branch",
+      "w": 620,
+      "x": 1250,
+      "y": 145
+    }
+  ],
+  "nodes": [
+    {
+      "fill": "#F7E8C2",
+      "h": 70,
+      "id": "all",
+      "label": "1,005 evaluated questions",
+      "w": 300,
+      "x": 180,
+      "y": 230
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 64,
+      "id": "slotbearing",
+      "label": "882 slot-bearing",
+      "w": 250,
+      "x": 125,
+      "y": 390
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 64,
+      "id": "slotless",
+      "label": "123 slotless",
+      "w": 160,
+      "x": 390,
+      "y": 390
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 68,
+      "id": "req",
+      "label": "required slots",
+      "w": 250,
+      "x": 785,
+      "y": 350
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 68,
+      "id": "res",
+      "label": "resolved slots",
+      "w": 250,
+      "x": 785,
+      "y": 465
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 110,
+      "id": "strict",
+      "label": "strict per-question trace completeness\n846/882 = 95.92%",
+      "w": 370,
+      "x": 725,
+      "y": 590
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 110,
+      "id": "micro",
+      "label": "micro required-slot coverage\n3,837/3,889 = 98.66%",
+      "w": 370,
+      "x": 725,
+      "y": 735
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 82,
+      "id": "answer",
+      "label": "answer accepted/rejected\n811/1,005 = 80.70%",
+      "w": 360,
+      "x": 1390,
+      "y": 240
+    },
+    {
+      "fill": "#F7E8C2",
+      "h": 82,
+      "id": "hybrid",
+      "label": "hybrid evidence resolution\n978/1,005 = 97.31%",
+      "w": 360,
+      "x": 1390,
+      "y": 380
+    },
+    {
+      "fill": "#EAF2F8",
+      "h": 130,
+      "id": "reject",
+      "label": "Rejected-answer contingency\ntrace-complete + rejected: 167\ntrace-incomplete + rejected: 22\nslotless + rejected: 5",
+      "w": 400,
+      "x": 1370,
+      "y": 540
+    }
+  ],
+  "note_box": {
+    "h": 170,
+    "w": 1820,
+    "x": 90,
+    "y": 900
+  },
+  "notes": [
+    "Hybrid evidence resolution is not answer accuracy and is not a conventional top-k retrieval metric."
+  ],
+  "required_labels": [
+    "Answer Evaluation and Evidence-Resolution Measurement",
+    "Cohort split",
+    "Slot-bearing branch",
+    "All-question branch",
+    "1,005 evaluated questions",
+    "882 slot-bearing",
+    "123 slotless",
+    "required slots",
+    "resolved slots",
+    "strict per-question trace completeness 846/882 = 95.92%",
+    "micro required-slot coverage 3,837/3,889 = 98.66%",
+    "answer accepted/rejected 811/1,005 = 80.70%",
+    "hybrid evidence resolution 978/1,005 = 97.31%",
+    "Rejected-answer contingency trace-complete + rejected: 167 trace-incomplete + rejected: 22 slotless + rejected: 5",
+    "Hybrid evidence resolution is not answer accuracy and is not a conventional top-k retrieval metric."
+  ],
+  "stem": "05_evaluation_and_trace_measurement",
+  "title": "Answer Evaluation and Evidence-Resolution Measurement"
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.invalid/chronorag-g-public/answer-contract.schema.json",
+  "title": "Generic grounded answer contract",
+  "description": "Public answer components with explicit evidence citations and no hidden reasoning fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["components", "overall_status"],
+  "properties": {
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {"$ref": "#/$defs/component"}
+    },
+    "overall_status": {
+      "type": "string",
+      "enum": ["supported", "unsupported", "insufficient_evidence"]
+    }
+  },
+  "$defs": {
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requirement_id", "status", "value", "evidence_ids", "note"],
+      "properties": {
+        "requirement_id": {"type": "string", "pattern": "^E[1-9][0-9]*$"},
+        "status": {
+          "type": "string",
+          "enum": ["supported", "unsupported", "insufficient_evidence"]
+        },
+        "value": {"type": ["string", "number", "integer", "boolean", "null"]},
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1, "maxLength": 256}
+        },
+        "note": {"type": "string", "maxLength": 2048}
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "ChronoRAG-G Public Research Artifact"
+message: "Please cite the ChronoRAG-G paper and this public research artifact."
+type: software
+authors:
+  - name: "Shreyas Gowda S"
+version: "0.4.0-rc1"
+license: "Apache-2.0"
+abstract: "Public schemas, synthetic examples, validators, aggregate tables, and figures for ChronoRAG-G without the private runtime or private data."
+repository-code: "https://github.com/SSKG2602/ChronoRAG-G"

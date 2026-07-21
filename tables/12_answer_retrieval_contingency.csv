@@ -1,0 +1,7 @@
+condition,answer_status,count,denominator,percentage,percentage_basis
+strict trace complete,accepted,679,811,83.72%,accepted answers
+strict trace complete,rejected,167,194,86.08%,rejected answers
+trace incomplete,accepted,14,811,1.73%,accepted answers
+trace incomplete,rejected,22,194,11.34%,rejected answers
+slotless,accepted,118,811,14.55%,accepted answers
+slotless,rejected,5,194,2.58%,rejected answers

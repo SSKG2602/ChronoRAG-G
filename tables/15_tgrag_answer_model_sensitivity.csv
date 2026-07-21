@@ -1,0 +1,5 @@
+answer model inside TG-RAG,Correct,Refusal,Incorrect,denominator,scope
+DeepSeek-R1,62.50%,17.40%,20.10%,656,"TG-RAG pipeline, base queries/base corpus"
+Qwen3-235B-A22B-Instruct-2507,61.90%,20.00%,18.00%,656,"TG-RAG pipeline, base queries/base corpus"
+GPT-4o-mini,59.90%,19.10%,21.00%,656,"TG-RAG pipeline, base queries/base corpus"
+Llama-3.3-70B-Instruct,46.60%,37.30%,16.00%,656,"TG-RAG pipeline, base queries/base corpus"

@@ -1,0 +1,21 @@
+{
+  "question": "Compare Acme Holdings service margin with Beta Systems subscription retention during 2031-Q1.",
+  "requirements": [
+    {
+      "id": "E1",
+      "subject": "Acme Holdings",
+      "property": "service margin",
+      "temporal_scope": "2031-Q1",
+      "expected_value_type": "percentage",
+      "optional_qualifiers": {"unit": "percent"}
+    },
+    {
+      "id": "E2",
+      "subject": "Beta Systems",
+      "property": "subscription retention",
+      "temporal_scope": "2031-Q1",
+      "expected_value_type": "percentage",
+      "optional_qualifiers": {"unit": "percent"}
+    }
+  ]
+}
