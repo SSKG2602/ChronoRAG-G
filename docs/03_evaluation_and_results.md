@@ -10,29 +10,29 @@ ChronoRAG-G achieved 811/1,005 = 80.70% audited answer accuracy. The approximate
 
 ## Query partitions
 
-| Partition | Accepted | Rejected | Total | Accuracy |
-| --- | ---: | ---: | ---: | ---: |
-| Base / updated corpus | 517 | 139 | 656 | 78.81% |
-| New / updated corpus | 294 | 55 | 349 | 84.24% |
-| Overall | 811 | 194 | 1,005 | 80.70% |
+| Partition             | Accepted | Rejected | Total | Accuracy |
+| --------------------- | -------: | -------: | ----: | -------: |
+| Base / updated corpus |      517 |      139 |   656 |   78.81% |
+| New / updated corpus  |      294 |       55 |   349 |   84.24% |
+| Overall               |      811 |      194 | 1,005 |   80.70% |
 
 New-query unanswerable accuracy was 101/101 = 100.00%.
 
 ## Reasoning type
 
-| Type | Accepted | Rejected | Total | Accuracy |
-| --- | ---: | ---: | ---: | ---: |
-| Enumeration | 318 | 144 | 462 | 68.83% |
-| Comparison | 240 | 42 | 282 | 85.11% |
-| Unanswerable | 253 | 8 | 261 | 96.93% |
+| Type         | Accepted | Rejected | Total | Accuracy |
+| ------------ | -------: | -------: | ----: | -------: |
+| Enumeration  |      318 |      144 |   462 |   68.83% |
+| Comparison   |      240 |       42 |   282 |   85.11% |
+| Unanswerable |      253 |        8 |   261 |   96.93% |
 
 ## Temporal scope
 
-| Scope | Accepted | Rejected | Total | Accuracy |
-| --- | ---: | ---: | ---: | ---: |
-| Single-time | 359 | 124 | 483 | 74.33% |
-| Multi-time | 283 | 38 | 321 | 88.16% |
-| Relative-time | 169 | 32 | 201 | 84.08% |
+| Scope         | Accepted | Rejected | Total | Accuracy |
+| ------------- | -------: | -------: | ----: | -------: |
+| Single-time   |      359 |      124 |   483 |   74.33% |
+| Multi-time    |      283 |       38 |   321 |   88.16% |
+| Relative-time |      169 |       32 |   201 |   84.08% |
 
 ## Evidence-level measures
 
@@ -60,11 +60,11 @@ Hybrid evidence resolution is a per-question evidence-resolution measure. It is 
 
 ## Answer and trace contingency
 
-| Trace condition | Accepted | Rejected |
-| --- | ---: | ---: |
-| Strict trace complete | 679 | 167 |
-| Trace incomplete | 14 | 22 |
-| Slotless | 118 | 5 |
+| Trace condition       | Accepted | Rejected |
+| --------------------- | -------: | -------: |
+| Strict trace complete |      679 |      167 |
+| Trace incomplete      |       14 |       22 |
+| Slotless              |      118 |        5 |
 
 Among rejected answers, 167/194 = 86.08% had complete strict slot traces.
 
@@ -76,4 +76,4 @@ ChronoRAG-G achieved 80.70%, compared with TG-RAG's combined 59.74%, a gap of ap
 
 ## Frozen-score boundary
 
-The public headline result is 811/1,005 = 80.70%. A theoretical 830/1,005 = 82.59% all-19-flip ceiling is reported only as human-review accounting and is not the frozen score.
+The headline result is 811/1,005 = 80.70%. A theoretical 830/1,005 = 82.59% all-19-flip ceiling is reported only as human-review accounting and is not the frozen score.

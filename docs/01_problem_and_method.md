@@ -22,7 +22,7 @@ P(q) = [E1, E2, ..., En]
 
 Each obligation is independently resolvable, missing, or disputed. This makes partial evidence visible rather than allowing one successful retrieval to hide another missing requirement.
 
-## Public method
+## Method
 
 1. Parse the question into ordered obligations.
 2. Validate that every obligation has a stable identifier and typed temporal request.

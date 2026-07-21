@@ -37,7 +37,7 @@ Candidates are deduplicated inside a slot. A physical record may remain relevant
 
 ## 3. Compatibility and temporal control
 
-Candidate compatibility is considered separately from semantic similarity. Publicly described checks include:
+Candidate compatibility is considered separately from semantic similarity. Described checks include:
 
 - entity compatibility;
 - metric compatibility;
