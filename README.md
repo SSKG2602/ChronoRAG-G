@@ -45,6 +45,12 @@ A single top-k retrieval list does not explicitly guarantee that every requireme
 
 ChronoRAG-G addresses this by making the unit of retrieval and evaluation explicit.
 
+### Deferred semantic resolution
+
+ChronoRAG-G distinguishes low-level ingestion from semantic resolution. Document parsing, text extraction, metadata validation, timestamp extraction, schema normalization, provenance capture, and indexing are performed during corpus construction. However, GTCC does not force potentially conflicting observations into one canonical fact at ingestion time. Revisions, historical states, temporally distinct values, and unresolved evidence are retained in a structured representation so that their compatibility can be evaluated against the specific entity, metric, and target period requested by a question.
+
+Deferred semantic resolution does not mean the absence of preprocessing. The corpus still undergoes parsing, validation, structural normalization, provenance capture, record construction, malformed-record rejection, technical duplicate handling where necessary, and indexing. The deferred operations are semantic: selecting which observation governs a particular question, determining whether two values are genuinely contradictory, and deciding whether an older or revised statement remains relevant.
+
 ---
 
 ## 2. Core terminology

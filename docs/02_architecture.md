@@ -19,6 +19,21 @@ question
 → answer and trace evaluation
 ```
 
+## Ingestion boundary and deferred resolution
+
+ChronoRAG-G distinguishes low-level ingestion from semantic resolution. Document parsing, text extraction, metadata validation, timestamp extraction, schema normalization, provenance capture, record construction, malformed-record rejection, technical duplicate handling where necessary, and indexing are performed during corpus construction. GTCC then preserves potentially conflicting values, revision history, historical state, and temporally incompatible evidence as structured evidence rather than collapsing conflicting values, overwriting historical states, discarding revised or superseded observations, forcing one canonical fact during ingestion, prematurely resolving temporal ambiguity, or removing evidence only because it conflicts with a later observation.
+
+```text
+source documents
+→ parsing and metadata extraction
+→ structural normalization and provenance capture
+→ preservation of temporally distinct observations
+→ slot-conditioned retrieval
+→ question-specific temporal resolution
+```
+
+This deferred semantic resolution boundary lets source/statement period and target/value period metadata remain available to later compatibility checks. Question-specific resolution occurs during slot-conditioned retrieval, temporal compatibility checking, evidence allocation, and answer construction.
+
 ## 1. Planning and obligation construction
 
 The planning stage converts the question into ordered atomic requirements. Each requirement contains the public information needed to identify one answer cell: entity, metric, requested period, temporal role, target type, and output position.

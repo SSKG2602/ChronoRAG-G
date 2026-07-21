@@ -10,6 +10,18 @@ Many financial questions contain a Cartesian structure: multiple entities, metri
 
 ChronoRAG-G makes every required answer cell explicit.
 
+## Deferred semantic resolution
+
+Many retrieval pipelines are optimized for relatively stable knowledge and reduce inconsistency before retrieval. That strategy is useful when conflicting records are redundant or erroneous, but it can erase temporal information in longitudinal corpora. ChronoRAG-G instead treats inconsistency as potentially informative until the relevant temporal and semantic context is known.
+
+ChronoRAG-G distinguishes low-level ingestion from semantic resolution. Document parsing, text extraction, metadata validation, timestamp extraction, schema normalization, provenance capture, and indexing are performed during corpus construction. However, GTCC does not force potentially conflicting observations into one canonical fact at ingestion time. Revisions, historical states, temporally distinct values, and unresolved evidence are retained in a structured representation so that their compatibility can be evaluated against the specific entity, metric, and target period requested by a question.
+
+This design follows a deferred semantic resolution principle. Evidence is normalized structurally without prematurely collapsing its temporal meaning. A value that conflicts with another record may represent a different reporting period, a revised estimate, forward guidance, or a later historical state rather than simple noise. ChronoRAG-G therefore resolves such conflicts during slot-conditioned retrieval, temporal compatibility checking, evidence allocation, and answer construction, where the question supplies the context needed to determine relevance.
+
+Deferred semantic resolution does not mean the absence of preprocessing. The corpus still undergoes parsing, validation, structural normalization, provenance capture, record construction, field validation, malformed-record rejection, technical duplicate handling where necessary, and indexing. The deferred operations are semantic: selecting which observation governs a particular question, determining whether two values are genuinely contradictory, and deciding whether an older or revised statement remains relevant.
+
+This is not embedding unreviewed documents. It is temporal evidence preservation after low-level ingestion: semantically distinct observations, revision history, temporally incompatible evidence, source/statement period metadata, and target/value period metadata are preserved as structured evidence until a question supplies the context for resolution.
+
 ## Evidence obligations and slots
 
 An evidence obligation is one atomic fact requirement. A slot is its runtime and evaluation representation. A typical slot corresponds to an entity, metric, and target period, with additional role or relation information where necessary.

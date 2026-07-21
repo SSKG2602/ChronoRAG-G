@@ -18,11 +18,15 @@ The current evaluation focuses on ECT-QA and earnings-call transcripts. ChronoRA
 
 The contextual leaderboard aligns updated-corpus query partitions, but retrieval, prompting, and adjudication protocols differ across systems. It compares reported whole-pipeline outcomes rather than identical reimplementations.
 
+### Deferred semantic resolution trade-off
+
+Preserving conflicting and revised observations increases the burden on temporal compatibility checking and downstream answer construction. The architecture therefore depends on reliable metadata and explicit source-period/target-period handling.
+
 ## Future work
 
 ### 1. Explicit source-period and target-period representation
 
-Future evidence records should distinguish when a statement was made, the period to which its value applies, and the period requested by the question.
+Future evidence records should distinguish when a statement was made, the period to which its value applies, and the period requested by the question. This direction also supports deferred semantic resolution by keeping source/statement period and target/value period metadata available until question-specific temporal resolution.
 
 ### 2. Time-parameterized retrieval representations
 
