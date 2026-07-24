@@ -2,14 +2,14 @@
 \centering
 \footnotesize
 \setlength{\tabcolsep}{5pt}
-\caption{Pending-human accounting and all-19-flip ceiling}
+\caption{Pending-human accounting and all-19-pending-human-flip annotation ceiling}
 \label{tab:d5c-pending-annotation-bound}
 \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{0.20\linewidth}rrr>{\raggedright\arraybackslash}X}
 \toprule
 scenario & accepted & total & accuracy & interpretation \\
 \midrule
-frozen audited score & 811 & 1005 & 80.70\% & Frozen reported result; the 19 pending-human rows remain rejected. \\
-theoretical all-19-flip ceiling & 830 & 1005 & 82.59\% & The 82.59\% value is a theoretical upper bound if all 19 pending-human rows flip to accepted. It is not an expected score and not the frozen reported result. \\
+frozen audited score & 811 & 1005 & 80.70\% & 19 rows remained pending independent second annotation and disagreement adjudication at the recorded freeze. \\
+all-19-pending-human-flip annotation ceiling & 830 & 1005 & 82.59\% & The 82.59\% value is the all-19-pending-human-flip annotation ceiling if every pending-human item flips to accepted. It is not an expected score and not the frozen reported result. \\
 \bottomrule
 \end{tabularx}
 \end{table}

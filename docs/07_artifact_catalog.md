@@ -21,7 +21,7 @@ Every table is supplied in CSV, Markdown, and LaTeX.
 | 13  | Conditional failure decomposition | Trace-complete, incomplete, and slotless rejected answers |
 | 14  | Contextual pipeline leaderboard   | Reported updated-corpus whole-pipeline outcomes           |
 | 15  | TG-RAG answer-model sensitivity   | Published answer-model variation inside TG-RAG            |
-| 16  | Pending-human accounting          | Frozen result and theoretical all-19-flip ceiling         |
+| 16  | Pending-human accounting          | Frozen result and all-19-pending-human-flip annotation ceiling |
 | 17  | Public claim eligibility          | Approved, caveated, and forbidden formulations            |
 
 ## Result figures

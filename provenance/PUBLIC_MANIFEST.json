@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "80b252850860b2b72970bc4e9f226f4b6be0295f2c585134713d176dbe2191b4",
-      "size_bytes": 19575
+      "sha256": "06675ae735c74f72dffcafa9bbe33d652e6b0f1bda929635088598dc42d28d01",
+      "size_bytes": 20720
     },
     {
       "path": "SECURITY.md",
@@ -44,18 +44,18 @@
     },
     {
       "path": "docs/01_problem_and_method.md",
-      "sha256": "b2b6d6c3046ac54eb0fd3c805875d9b2002f3af013f70c001e3d3f820d71bdd7",
-      "size_bytes": 2538
+      "sha256": "22c6de7dc60f1935377d502cacd03c7bc4ee4632d378ff04d113945f462de570",
+      "size_bytes": 4992
     },
     {
       "path": "docs/02_architecture.md",
-      "sha256": "85fc0656f1907d77f486d3f1270dfa30f47386373b792619fa2e0f2646374c96",
-      "size_bytes": 4081
+      "sha256": "3f58fa2a4892438eca93ce05709fcb6bda46215f5fce0e3dbc262a001a29cb57",
+      "size_bytes": 6368
     },
     {
       "path": "docs/03_evaluation_and_results.md",
-      "sha256": "6e511d8a65a758902e2059a6e00dad0a3c24e738ce031639a201f9fbf16da0ac",
-      "size_bytes": 2620
+      "sha256": "7e82f72fe643c43ee70ceda68b9ed0fbce6105ec45b9d8de1d6eab5439559f50",
+      "size_bytes": 3432
     },
     {
       "path": "docs/04_failure_analysis.md",
@@ -64,18 +64,18 @@
     },
     {
       "path": "docs/05_limitations_and_future_work.md",
-      "sha256": "36bffaf3a38873b0085ae6d177bd3aa3ae5b8a7fd0342f2b36fd211a81110e07",
-      "size_bytes": 2487
+      "sha256": "af462f6f3c55491f07b6bf1002c220edcb7b6124efed4cef8cb4517ab183c840",
+      "size_bytes": 2960
     },
     {
       "path": "docs/06_public_private_boundary.md",
-      "sha256": "203806b5a8c85c2a234b66d69748f5dac8d2f382d175e9020e03f3715008ddf8",
-      "size_bytes": 1514
+      "sha256": "48f054db39aa2d6dfb7394569875c02b89373180a5d1b1caeeb868ff2ce8435d",
+      "size_bytes": 2085
     },
     {
       "path": "docs/07_artifact_catalog.md",
-      "sha256": "948d52f505a7265939af2ff0039276a0ce3e2706c65085986984641a3534757d",
-      "size_bytes": 4114
+      "sha256": "1be775418034bed2089cbfc34faa4a09fb03f72cb377575cc1d6a6cc8f535a71",
+      "size_bytes": 5743
     },
     {
       "path": "docs/architecture/CAPTIONS.md",
@@ -704,18 +704,18 @@
     },
     {
       "path": "tables/14_published_pipeline_context.csv",
-      "sha256": "85a9ff0368bac2ccf4f688abc19d85a762c928ac90e1a7dd973a587ed13810b4",
-      "size_bytes": 1168
+      "sha256": "24684c0a0f9a5f4616ca7ebce91fdf2f3d61d1c26105e8fd40a541602e5e5ccb",
+      "size_bytes": 1148
     },
     {
       "path": "tables/14_published_pipeline_context.md",
-      "sha256": "84b913dd1007e45195f2487c5f3064e2d39d2aa7e0513eec0d60a7071736ca94",
-      "size_bytes": 1431
+      "sha256": "5e9f0dadaf56e1a23941212f4a645d1c28d83c5aee016060ac979763070e2610",
+      "size_bytes": 1411
     },
     {
       "path": "tables/14_published_pipeline_context.tex",
-      "sha256": "dd5f59d7db381a3401f56c3b35d8a937891c64784e3a9f5898ee25c52f704926",
-      "size_bytes": 1658
+      "sha256": "c7883591059acc1206022d28796ee08c6fbf8a632f4e86fc8106c958840a4c94",
+      "size_bytes": 1664
     },
     {
       "path": "tables/15_tgrag_answer_model_sensitivity.csv",
@@ -734,18 +734,18 @@
     },
     {
       "path": "tables/16_pending_annotation_bound.csv",
-      "sha256": "8bf5f72ce76e9ff1a2d3157708837a3096f359281b3502828d821de95505d5b6",
-      "size_bytes": 360
+      "sha256": "69ab75007eb46e03057c346244047be3084f3ef670989bf1d5ae77f89f63ae49",
+      "size_bytes": 436
     },
     {
       "path": "tables/16_pending_annotation_bound.md",
-      "sha256": "2e6808000622c3d2f7d4f98d4884a7567f915ee2c40f0a054feac04c5e8bca7d",
-      "size_bytes": 479
+      "sha256": "fabc0b7715752aeaf292d0303679b326bf36442d465e84e97f483404a3f1d86b",
+      "size_bytes": 582
     },
     {
       "path": "tables/16_pending_annotation_bound.tex",
-      "sha256": "2aa8be0b15d7c7c6b81c229a572f83f35b9cfe0137b5f6c0fea1ef3111e1d161",
-      "size_bytes": 735
+      "sha256": "ae19814f3a9b130b0e63d24639d26899f692e8d98a7207d19b81bec8bcc7ec2a",
+      "size_bytes": 838
     },
     {
       "path": "tables/17_comparison_eligibility_and_claims.csv",

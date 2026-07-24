@@ -74,6 +74,12 @@ The release includes a contextual result-level leaderboard under aligned updated
 
 ChronoRAG-G achieved 80.70%, compared with TG-RAG's combined 59.74%, a gap of approximately 20.95 percentage points. The systems use different retrieval, prompting, and adjudication protocols; the comparison is therefore result-level rather than an identical reimplementation.
 
+## Gold-Evidence Oracle Attainment
+
+ChronoRAG-G reached 80.70% audited answer accuracy and attained 90.44% of the published LLM-GT gold-evidence oracle score (80.70% divided by 89.23%). LLM-GT receives gold evidence directly and serves as an answer-generation oracle reference. ChronoRAG-G retrieves its own evidence.
+
+The 90.44% value is the oracle-attainment ratio. The 89.23% LLM-GT result is the published gold-evidence oracle score used for this comparison.
+
 ## Frozen-score boundary
 
-The headline result is 811/1,005 = 80.70%. A theoretical 830/1,005 = 82.59% all-19-flip ceiling is reported only as human-review accounting and is not the frozen score.
+The headline result is 811/1,005 = 80.70%. An 830/1,005 = 82.59% all-19-pending-human-flip annotation ceiling is reported only as human-review accounting and is not the frozen score.

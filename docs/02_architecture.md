@@ -50,6 +50,12 @@ Every slot owns a candidate pool. The public abstraction allows deterministic ca
 
 Candidates are deduplicated inside a slot. A physical record may remain relevant to several slots.
 
+## GTCC and Controlled Candidate Expansion
+
+GTCC is the runtime evidence substrate for the evaluated path. Each required slot searches the normalized embedding index built from 67,591 GTCC records. When a slot remains weak, controlled candidate expansion increases that slot's GTCC candidate view from 10 to 15, 20, and 25 records. The system merges and deduplicates returned GTCC records by stable identity, then uses GTCC temporal, semantic, provenance, and field-presence metadata during compatibility control, allocation, grounding, and trace reconstruction.
+
+The frozen scoring path does not traverse adjacency edges. Graph structure preserves linked temporal records, relation metadata, document membership, provenance, and stable identity, while exact dense retrieval supplies candidate motion over the GTCC index. Controlled candidate expansion therefore depends on GTCC even though it is not classical graph traversal.
+
 ## 3. Compatibility and temporal control
 
 Candidate compatibility is considered separately from semantic similarity. Described checks include:
